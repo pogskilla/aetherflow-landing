@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AetherFlow - Multi-platform short & long-form editing, custom AI-driven automation, and on-demand access to highly vetted creative freelancers. All in one subscription.">
-    <title>AetherFlow — Multi-Platform Editing, AI Automation & Elite Talent</title>
-    <!-- Tailwind CSS CDN -->
+    <title>OmniFlow • Multi-Platform Canva + AI Editing</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -15,9 +14,9 @@
                         brand: {
                             50: '#f5f3ff',
                             100: '#ede9fe',
-                            500: '#8b5cf6',
-                            600: '#7c3aed',
-                            700: '#6d28d9',
+                            500: '#7c3aed',
+                            600: '#6d28d9',
+                            700: '#5b21b6',
                             900: '#4c1d95',
                         }
                     }
@@ -26,243 +25,83 @@
         }
     </script>
     <style>
-        .glass {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
         }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
-
-    <!-- Header / Navigation -->
-    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-slate-800">
-        <div class="flex items-center space-x-3">
-            <!-- Icon/Logo -->
-            <div class="bg-brand-600 h-9 w-9 rounded-xl flex items-center justify-center font-bold text-white text-lg tracking-tighter">AF</div>
-            <span class="text-2xl font-semibold tracking-tight text-white">AetherFlow</span>
-        </div>
-        <a href="#waitlist" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5 px-6 rounded-xl transition duration-200 text-sm shadow-sm">
-            Join Waitlist
-        </a>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 py-20 text-center">
-        <div class="inline-flex items-center gap-2 bg-brand-900/60 text-brand-200 text-xs font-medium px-4 py-1.5 rounded-full border border-brand-700/60 mb-6">
-            <div class="w-2 h-2 bg-brand-400 rounded-full animate-pulse"></div>
-            NOW ACCEPTING EARLY ACCESS APPLICATIONS
-        </div>
-        
-        <h1 class="text-5xl md:text-6xl font-semibold text-white tracking-tighter leading-none">
-            Edit once.<br>
-            Automate everything.<br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-violet-400 to-brand-500">Scale with elite talent.</span>
-        </h1>
-        <p class="mt-6 text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            The operating system for modern content teams: multi-platform editing, intelligent automation, and instant access to world-class freelancers — all under one roof.
-        </p>
-
-        <!-- Lead Capture Form -->
-        <div class="mt-10 max-w-md mx-auto">
-            <form action="#" method="POST" class="flex flex-col sm:flex-row gap-3" id="hero-form">
-                <input 
-                    type="email" 
-                    name="email" 
-                    required 
-                    placeholder="Work email address" 
-                    class="w-full px-5 py-3.5 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm"
-                />
-                <button 
-                    type="submit" 
-                    class="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white font-semibold py-3.5 px-8 rounded-xl transition-all duration-200 whitespace-nowrap text-sm shadow-sm"
-                >
-                    Secure Early Access
-                </button>
-            </form>
-            <p class="text-xs text-slate-500 mt-4">Limited to the first 50 partners. No spam, ever.</p>
-        </div>
-    </section>
-
-    <!-- Three Core Pillars Section -->
-    <section class="bg-slate-900/60 py-20 border-y border-slate-800">
+    <!-- Navigation -->
+    <nav class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <h2 class="text-3xl font-semibold text-white tracking-tight">One platform. Three superpowers.</h2>
-                <p class="text-slate-400 mt-3 text-[15px]">We combine premium creative production, custom AI infrastructure, and hand-selected talent into a single, seamless workflow.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Pillar 1: Editing -->
-                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group">
-                    <div class="bg-brand-900/50 text-brand-400 p-3.5 rounded-2xl w-fit mb-7 group-hover:bg-brand-900/70 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl tracking-tighter">OF</span>
                     </div>
-                    <h3 class="text-2xl font-semibold text-white tracking-tight">Multi-Platform Editing</h3>
-                    <p class="text-slate-400 mt-4 text-[15px] leading-relaxed">
-                        High-performance video & graphic editing engineered for TikTok, YouTube, Instagram Reels, LinkedIn, and X. One master asset, perfectly adapted for every channel.
-                    </p>
-                    <div class="mt-6 text-xs text-brand-400 font-medium tracking-wider">TIKTOK • YOUTUBE • REELS • LINKEDIN</div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tighter">OmniFlow</span>
+                    </div>
                 </div>
-
-                <!-- Pillar 2: AI Automation -->
-                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group">
-                    <div class="bg-brand-900/50 text-brand-400 p-3.5 rounded-2xl w-fit mb-7 group-hover:bg-brand-900/70 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-white tracking-tight">AI Automation</h3>
-                    <p class="text-slate-400 mt-4 text-[15px] leading-relaxed">
-                        Custom workflow engineering and intelligent automation. We build lead gen pipelines, content scheduling systems, CRM integrations, and AI agents that remove manual work.
-                    </p>
-                    <div class="mt-6 text-xs text-brand-400 font-medium tracking-wider">WORKFLOWS • AGENTS • INTEGRATIONS</div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm">
+                    <a href="#offerings" class="hover:text-white transition-colors text-slate-300">Offerings</a>
+                    <a href="#how" class="hover:text-white transition-colors text-slate-300">How it works</a>
+                    <a href="#pricing" class="hover:text-white transition-colors text-slate-300">Pricing</a>
                 </div>
-
-                <!-- Pillar 3: Elite Freelance Skills -->
-                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group">
-                    <div class="bg-brand-900/50 text-brand-400 p-3.5 rounded-2xl w-fit mb-7 group-hover:bg-brand-900/70 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-white tracking-tight">Curated Talent Network</h3>
-                    <p class="text-slate-400 mt-4 text-[15px] leading-relaxed">
-                        Skip the hiring noise. Access our private network of proven copywriters, editors, designers, and developers — managed end-to-end by a dedicated project lead.
-                    </p>
-                    <div class="mt-6 text-xs text-brand-400 font-medium tracking-wider">VETTED • MANAGED • ON-DEMAND</div>
+                
+                <div class="flex items-center gap-x-3">
+                    <a href="#pricing" class="px-5 py-2 text-sm font-semibold rounded-xl border border-slate-700 hover:bg-slate-900 transition-colors">
+                        View Pricing
+                    </a>
+                    <a href="#pricing" class="px-5 py-2 text-sm font-semibold rounded-xl bg-violet-600 hover:bg-violet-700 transition-colors">
+                        Get Started
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Process Section -->
-    <section class="max-w-5xl mx-auto px-6 py-20">
-        <div class="text-center mb-14">
-            <h2 class="text-3xl font-semibold text-white tracking-tight">How AetherFlow works</h2>
-            <p class="text-slate-400 mt-3">From application to results in three clear steps.</p>
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-20 text-center">
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-2xl bg-slate-900 border border-slate-800 mb-6">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span class="text-xs font-medium tracking-[1px] text-emerald-400">NOW ACCEPTING CLIENTS — LIMITED SPOTS</span>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div class="px-4">
-                <div class="mx-auto w-12 h-12 flex items-center justify-center rounded-2xl bg-brand-900/60 text-brand-400 text-2xl font-semibold mb-6">01</div>
-                <h4 class="text-xl font-semibold text-white tracking-tight">Join the Waitlist</h4>
-                <p class="text-slate-400 mt-3 text-[15px] leading-relaxed">Tell us about your current content and operations bottlenecks. We review every application personally.</p>
-            </div>
-            <div class="px-4">
-                <div class="mx-auto w-12 h-12 flex items-center justify-center rounded-2xl bg-brand-900/60 text-brand-400 text-2xl font-semibold mb-6">02</div>
-                <h4 class="text-xl font-semibold text-white tracking-tight">Custom Onboarding</h4>
-                <p class="text-slate-400 mt-3 text-[15px] leading-relaxed">We configure your workspace, connect your tools, and assign the right editors, automators, and talent to your brand.</p>
-            </div>
-            <div class="px-4">
-                <div class="mx-auto w-12 h-12 flex items-center justify-center rounded-2xl bg-brand-900/60 text-brand-400 text-2xl font-semibold mb-6">03</div>
-                <h4 class="text-xl font-semibold text-white tracking-tight">Operate on Autopilot</h4>
-                <p class="text-slate-400 mt-3 text-[15px] leading-relaxed">Receive high-quality assets, automated systems, and managed freelance execution — without the hiring overhead.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA / Waitlist Section -->
-    <section id="waitlist" class="bg-gradient-to-b from-slate-900 to-slate-950 py-20 border-t border-slate-800">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-semibold text-white tracking-tighter">Ready to remove the friction from scaling?</h2>
-            <p class="text-slate-400 mt-4 text-lg max-w-lg mx-auto">
-                Join our private waitlist. We are onboarding a limited number of partners to maintain exceptional quality and white-glove service.
-            </p>
-
-            <div class="mt-9 max-w-md mx-auto">
-                <form action="#" method="POST" class="flex flex-col sm:flex-row gap-3" id="waitlist-form">
-                    <input 
-                        type="email" 
-                        name="email" 
-                        required 
-                        placeholder="Your professional email" 
-                        class="w-full px-5 py-3.5 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm"
-                    />
-                    <button 
-                        type="submit" 
-                        class="w-full sm:w-auto bg-white hover:bg-slate-100 active:bg-slate-200 text-slate-950 font-semibold py-3.5 px-8 rounded-xl transition-all duration-200 whitespace-nowrap text-sm"
-                    >
-                        Request Access
-                    </button>
-                </form>
-                <p class="text-xs text-slate-500 mt-4">We personally review every submission. Expect a reply within 48 hours.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Direct Contact with Founder -->
-    <section class="max-w-3xl mx-auto px-6 pb-16 -mt-6">
-        <div class="text-center">
-            <p class="text-slate-400 text-sm mb-4">Or message the founder directly</p>
-            <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                <!-- WhatsApp Button -->
-                <a href="https://wa.me/639351264827?text=Hi%2C%20I'm%20interested%20in%20AetherFlow" 
-                   target="_blank"
-                   class="inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-semibold py-3.5 px-8 rounded-xl transition-all text-sm shadow-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.67-.966-.92-1.32-.248-.354-.5-.297-.67-.297-.17 0-.372.074-.569.223-.198.149-1.52 1.49-1.52 3.63 0 2.14 1.57 4.21 1.79 4.5.223.297 3.08 4.71 7.45 6.6 4.37 1.89 4.37 1.26 5.16 1.19.79-.07 2.54-.98 2.9-1.93.36-.95.36-1.76.25-1.93-.11-.17-.4-.27-.7-.42z"/>
-                        <path d="M12 2C6.48 2 2 6.48 2 12c0 1.86.52 3.59 1.42 5.07L2 22l4.93-1.42A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.48 0-2.86-.41-4.04-1.12l-.29-.17-2.93.84.84-2.93-.17-.29A7.96 7.96 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
-                    </svg>
-                    <span>Message on WhatsApp</span>
-                </a>
-                
-                <!-- Email Button -->
-                <a href="mailto:christiandaleferolino8@gmail.com?subject=Inquiry%20about%20AetherFlow"
-                   class="inline-flex items-center justify-center gap-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold py-3.5 px-8 rounded-xl transition-all text-sm">
-                    <span>Email the Founder</span>
-                </a>
-            </div>
-        </section>
-
-    <!-- Footer -->
-    <footer class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs border-t border-slate-800">
-        <p>&copy; 2026 AetherFlow. All rights reserved.</p>
-        <div class="flex space-x-6 mt-5 md:mt-0">
-            <a href="#" class="hover:text-slate-300 transition-colors">Privacy</a>
-            <a href="#" class="hover:text-slate-300 transition-colors">Terms</a>
-            <a href="mailto:christiandaleferolino8@gmail.com" class="hover:text-slate-300 transition-colors">Contact</a>
-        </div>
-    </footer>
-
-    <script>
-        // Simple form handling for demo - replace with Formspree or backend
-        function setupForm(formId) {
-            const form = document.getElementById(formId);
-            if (!form) return;
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const btn = form.querySelector('button');
-                const originalText = btn.innerHTML;
-                
-                btn.innerHTML = 'Submitting...';
-                btn.disabled = true;
-                
-                setTimeout(() => {
-                    btn.innerHTML = 'Request Received ✓';
-                    btn.classList.add('!bg-emerald-600', '!hover:bg-emerald-700');
-                    
-                    setTimeout(() => {
-                        form.reset();
-                        btn.innerHTML = originalText;
-                        btn.disabled = false;
-                        btn.classList.remove('!bg-emerald-600', '!hover:bg-emerald-700');
-                        
-                        // Show success message
-                        const successMsg = document.createElement('p');
-                        successMsg.className = 'text-emerald-400 text-xs mt-3';
-                        successMsg.textContent = 'Thank you. We\'ll be in touch within 48 hours.';
-                        form.parentNode.appendChild(successMsg);
-                        
-                        setTimeout(() => successMsg.remove(), 4000);
-                    }, 1800);
-                }, 900);
-            });
-        }
         
-        setupForm('hero-form');
-        setupForm('waitlist-form');
-    </script>
-</body>
-</html>
+        <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-[1.05] mb-6">
+            Multi-Platform Canva + AI Editing.<br>
+            Professional graphics, carousels &amp; content<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">optimized for every platform.</span>
+        </h1>
+        
+        <p class="max-w-xl mx-auto text-xl text-slate-400 mb-10">
+            I create high-quality Canva graphics and repurposed content with AI assistance — optimized for TikTok, Instagram, YouTube, LinkedIn, and X. Delivered directly in Canva.
+        </p>
+        
+        <div class="max-w-md mx-auto">
+            <a href="#pricing" 
+               class="inline-flex w-full sm:w-auto items-center justify-center gap-x-2 bg-white text-slate-950 hover:bg-slate-100 transition-all font-semibold px-8 h-14 rounded-2xl text-base shadow-xl shadow-violet-950/50">
+                <span>View Packages &amp; Pricing</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="text-xs text-slate-500 mt-3">Starting at ₱8,500 • Delivered in Canva</p>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="border-y border-slate-800 bg-slate-900/50 py-4">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 text-sm text-slate-400">
+                <div>Helping founders and creators show up consistently with professional Canva content</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Offerings -->
+    <section id="offerings" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-14">
+            <div class="text-violet-400 text-xs font-semibold tracking-[
