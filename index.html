@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniFlow • Multi-Platform Canva + AI Editing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#7c3aed',
+                            600: '#6d28d9',
+                            700: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-gradient-to-br from-violet-600 to-indigo-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl tracking-tighter">OF</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tighter">OmniFlow</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm">
+                    <a href="#offerings" class="hover:text-white transition-colors text-slate-300">Offerings</a>
+                    <a href="#how" class="hover:text-white transition-colors text-slate-300">How it works</a>
+                    <a href="#pricing" class="hover:text-white transition-colors text-slate-300">Pricing</a>
+                </div>
+                
+                <div class="flex items-center gap-x-3">
+                    <a href="#pricing" class="px-5 py-2 text-sm font-semibold rounded-xl border border-slate-700 hover:bg-slate-900 transition-colors">
+                        View Pricing
+                    </a>
+                    <a href="#pricing" class="px-5 py-2 text-sm font-semibold rounded-xl bg-violet-600 hover:bg-violet-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-20 text-center">
+        <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-2xl bg-slate-900 border border-slate-800 mb-6">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span class="text-xs font-medium tracking-[1px] text-emerald-400">NOW ACCEPTING CLIENTS — LIMITED SPOTS</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-[1.05] mb-6">
+            Stop wasting hours creating<br>
+            content that still looks average.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">Get professional multi-platform content — fast.</span>
+        </h1>
+        
+        <p class="max-w-xl mx-auto text-xl text-slate-400 mb-10">
+            I deliver scroll-stopping Canva graphics, carousels, and repurposed content optimized for TikTok, Instagram, YouTube, LinkedIn, and X — using Canva + AI.
+        </p>
+        
+        <div class="max-w-md mx-auto">
+            <a href="#pricing" 
+               class="inline-flex w-full sm:w-auto items-center justify-center gap-x-2 bg-white text-slate-950 hover:bg-slate-100 transition-all font-semibold px-8 h-14 rounded-2xl text-base shadow-xl shadow-violet-950/50">
+                <span>View Packages &amp; Pricing</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="text-xs text-slate-500 mt-3">Starting at ₱800 • Delivered in Canva</p>
+        </div>
+    </section>
+
+    <!-- Pain Point Hook -->
+    <div class="max-w-3xl mx-auto px-6 pb-14 text-center">
+        <p class="text-lg text-slate-300">
+            Tired of spending hours designing content that still looks inconsistent across platforms?<br>
+            Struggling to post regularly while running your business? You're not alone — and it doesn't have to stay this way.
+        </p>
+    </div>
+
+    <!-- Trust Bar -->
+    <div class="border-y border-slate-800 bg-slate-900/50 py-4">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 text-sm text-slate-400">
+                <div>Helping founders and creators show up consistently with professional Canva content</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Offerings -->
+    <section id="offerings" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-14">
+            <div class="text-violet-400 text-xs font-semibold tracking-[2px] mb-3">TWO WAYS TO WORK WITH ME</div>
+            <h2 class="section-header">Professional multi-platform content.<br>Done for you or as ready-to-use templates.</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Done-for-You -->
+            <div class="group bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-violet-600/50 transition-all">
+                <div class="w-12 h-12 rounded-2xl bg-violet-600/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-palette text-violet-400 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-2xl tracking-tight mb-3">Done-for-You Canva + AI Content</h3>
+                <p class="text-slate-400 mb-6">Get professional graphics, carousels, and repurposed content optimized for TikTok, Instagram, YouTube, LinkedIn, and X — without spending hours designing.</p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>Platform-specific carousels &amp; graphics</span></li>
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>Content repurposing using AI + Canva</span></li>
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>Delivered directly in editable Canva link</span></li>
+                </ul>
+            </div>
+            
+            <!-- Template Kits -->
+            <div class="group bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-violet-600/50 transition-all">
+                <div class="w-12 h-12 rounded-2xl bg-violet-600/10 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-download text-violet-400 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-2xl tracking-tight mb-3">Ready-to-Use Canva Template Kits</h3>
+                <p class="text-slate-400 mb-6">Buy once and customize forever. Professional multi-platform templates so you can create high-quality content anytime — without starting from scratch.</p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>30+ ready-to-edit Canva templates</span></li>
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>Optimized for 5+ platforms</span></li>
+                    <li class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-400 w-4"></i> <span>Instant download + lifetime updates</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how" class="bg-slate-900/60 border-y border-slate-800 py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-14">
+                <div class="text-violet-400 text-xs font-semibold tracking-[2px] mb-3">SIMPLE. FAST. CLEAR.</div>
+                <h2 class="section-header">How it works</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center mb-6 text-2xl font-semibold text-violet-400">1</div>
+                    <h4 class="font-semibold text-xl mb-2">Send your content</h4>
+                    <p class="text-slate-400 text-sm">Share your raw ideas, posts, or topics. I'll handle the rest.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center mb-6 text-2xl font-semibold text-violet-400">2</div>
+                    <h4 class="font-semibold text-xl mb-2">I create in Canva + AI</h4>
+                    <p class="text-slate-400 text-sm">You receive professional, platform-optimized designs directly in Canva (easy to edit).</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center mb-6 text-2xl font-semibold text-violet-400">3</div>
+                    <h4 class="font-semibold text-xl mb-2">Post &amp; grow</h4>
+                    <p class="text-slate-400 text-sm">Show up consistently with high-quality content across all your platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="border-y border-slate-800 bg-slate-900/50 py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="text-violet-400 text-xs font-semibold tracking-[2px] mb-3">SIMPLE PRICING • DELIVERED IN CANVA</div>
+            <h2 class="text-3xl font-semibold tracking-tight mb-4">Choose the package that fits you</h2>
+            <p class="text-slate-400 max-w-md mx-auto mb-10">All packages are delivered in Canva. No long-term contracts.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <!-- Starter -->
+                <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 text-left flex flex-col">
+                    <div>
+                        <div class="font-semibold text-lg">Starter Package</div>
+                        <div class="mt-1 text-4xl font-semibold tracking-tighter">₱800</div>
+                        <div class="text-sm text-slate-400">One-time</div>
+                        
+                        <ul class="mt-8 space-y-3 text-sm">
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>8–10 custom Canva graphics</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>2 platform-optimized carousels</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Delivered in editable Canva link</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>2 rounds of revisions</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto pt-8">
+                        <a href="mailto:hello@omniflow.ai?subject=I'd like to get the Starter Package (₱800)" 
+                           class="block w-full text-center bg-white text-slate-950 hover:bg-slate-100 font-semibold py-3 rounded-2xl transition-all">
+                            Get Started — Starter Package
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Growth -->
+                <div class="bg-slate-900 border border-violet-600 rounded-3xl p-8 text-left flex flex-col relative">
+                    <div class="absolute -top-3 right-6 bg-violet-600 text-xs px-4 py-1 rounded-full font-medium">MOST POPULAR</div>
+                    <div>
+                        <div class="font-semibold text-lg">Growth Package</div>
+                        <div class="mt-1 text-4xl font-semibold tracking-tighter">₱1,500</div>
+                        <div class="text-sm text-slate-400">One-time • or ₱2,300/month</div>
+                        
+                        <ul class="mt-8 space-y-3 text-sm">
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>15–20 custom Canva pieces</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Full month of multi-platform content</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Carousels + graphics + thumbnails</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Priority delivery (5–7 days)</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Unlimited minor revisions</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto pt-8">
+                        <a href="mailto:hello@omniflow.ai?subject=I'd like to get the Growth Package (₱1,500)" 
+                           class="block w-full text-center bg-violet-600 hover:bg-violet-700 font-semibold py-3 rounded-2xl transition-all text-white">
+                            Get Started — Growth Package
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Template Kit -->
+                <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 text-left flex flex-col">
+                    <div>
+                        <div class="font-semibold text-lg">Template Kit</div>
+                        <div class="mt-1 text-4xl font-semibold tracking-tighter">₱2,300</div>
+                        <div class="text-sm text-slate-400">One-time • Instant access</div>
+                        
+                        <ul class="mt-8 space-y-3 text-sm">
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>30+ ready-to-edit Canva templates</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Optimized for 5 platforms</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Carousel + graphic + thumbnail templates</span></li>
+                            <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> <span>Lifetime access + updates</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto pt-8">
+                        <a href="mailto:hello@omniflow.ai?subject=I'd like to get the Template Kit (₱2,300)" 
+                           class="block w-full text-center bg-white text-slate-950 hover:bg-slate-100 font-semibold py-3 rounded-2xl transition-all">
+                            Get Started — Template Kit
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs text-slate-500 mt-6">After clicking "Get Started", your email app will open with the package pre-filled. Just send the message and I'll reply within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- Contact the Founder -->
+    <section class="max-w-3xl mx-auto px-6 py-16 text-center border-y border-slate-800">
+        <div class="mb-6">
+            <h3 class="text-2xl font-semibold tracking-tight">Tired of slow replies and generic service?</h3>
+            <p class="text-slate-400 mt-2">Message me directly. I personally handle every project and reply within 24 hours.</p>
+        </div>
+        <a href="mailto:hello@omniflow.ai" 
+           class="inline-flex items-center justify-center gap-x-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 transition-all font-semibold px-8 h-12 rounded-2xl text-base">
+            <i class="fa-solid fa-envelope mr-2"></i>
+            <span>Contact the Founder</span>
+        </a>
+        <p class="text-xs text-slate-500 mt-3">You'll get a personal reply from me — not a team or chatbot.</p>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <div class="mb-8">
+            <h2 class="text-4xl font-semibold tracking-tighter">Ready to stop struggling with content<br>and finally show up consistently?</h2>
+            <p class="text-xl text-slate-400 mt-4">Choose your package and get started today.</p>
+        </div>
+        
+        <div class="max-w-md mx-auto">
+            <a href="#pricing" 
+               class="inline-flex w-full items-center justify-center gap-x-2 bg-violet-600 hover:bg-violet-700 transition-all font-semibold px-8 h-14 rounded-2xl text-base">
+                View Packages &amp; Get Started
+            </a>
+            <p class="text-xs text-slate-500 mt-4">Delivered in Canva • Clear pricing • No long-term contracts</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-3">
+            <div>© 2026 OmniFlow. All rights reserved.</div>
+            <div class="flex gap-x-6">
+                <a href="#" class="hover:text-slate-300">Privacy</a>
+                <a href="#" class="hover:text-slate-300">Terms</a>
+                <a href="mailto:hello@omniflow.ai" class="hover:text-slate-300">hello@omniflow.ai</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
